@@ -1,0 +1,416 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.footer > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.logo {
+  margin-right: 86px;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-span {
+  color: #2196F3;
+}
+.copi-mail > .logo {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.link-button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  color: #212121;
+  background-color: #FFFFFF;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.link-button.primary {
+  color: #FFFFFF;
+  background-color: #2196F3;
+}
+
+.social-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), --color5 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-link:hover, .social-link:focus {
+  background-color: #2196F3;
+}
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+}
+.footer .icon-social {
+  --color5: #fff;
+}
+.social-link:hover > .icon-social, .social-link:focus > .icon-social {
+  --color5: #fff;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-link {
+  display: block;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-link:hover, .site-link:focus {
+  color: #2196F3;
+}
+.site-link.current {
+  position: relative;
+}
+
+.current {
+  color: #2196F3;
+}
+.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
+}
+
+.mail-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.mail-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mail-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.mail-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), --color6 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mail-link:focus, .mail-link:hover {
+  color: #2196F3;
+  --color6: #2196F3;
+}
+
+.icon-mail {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.contacts-text {
+  color: #212121;
+  text-align: center;
+}
+
+.footer {
+  background-color: #2F303A;
+}
+
+.copi-mail {
+  margin-right: 69px;
+}
+
+.copy {
+  font-style: normal;
+}
+
+.copy-nav:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.copy-address {
+  color: #FFFFFF;
+}
+
+.copy-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.network-title {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.form {
+  margin-left: auto;
+}
+
+.form-title {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.form-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+  margin-right: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2F303A;
+  outline: 0;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.form-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  line-height: 1.25;
+}
+.form-input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  line-height: 1.25;
+}
+.form-input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  line-height: 1.25;
+}
+.form-input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  line-height: 1.25;
+}
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.form-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 28px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196F3;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.icon-airplane {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-button:hover .icon-airplane {
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+
+.icon-mail.footer {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 15px;
+  --color6: #fff;
+  background-color: transparent;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-button:hover .icon-mail.footer {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}/*# sourceMappingURL=contacts.css.map */
